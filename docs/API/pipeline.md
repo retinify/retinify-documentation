@@ -1,5 +1,6 @@
 ---
 title: Pipeline
+parent: API
 layout: default
 nav_order: 2
 ---

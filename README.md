@@ -1,11 +1,6 @@
 # retinify documentation
 
-This repository contains the documentation for [retinify](https://github.com/retinify/retinify), a real-time AI stereo vision library.
-
-## 📚 Documentation Site
-
-To view the documentation:
-
+This repository contains the documentation for [retinify](https://github.com/retinify/retinify), a real-time AI stereo vision library.  
 👉 https://retinify.github.io/retinify-documentation/
 
 ## Third-Party
