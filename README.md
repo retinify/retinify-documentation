@@ -4,11 +4,12 @@ This repository contains the documentation for [retinify](https://github.com/ret
 
 ## 📚 Documentation Site
 
-The documentation is built using [Just the Docs](https://just-the-docs.github.io/just-the-docs/).
-
 To view the documentation:
 
 👉 https://retinify.github.io/retinify-documentation/
+
+## Third-Party
+For a list of third-party dependencies, please refer to [NOTICE.md](NOTICE.md).
 
 ## 🧾 License
 

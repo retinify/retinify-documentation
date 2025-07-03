@@ -3,6 +3,3 @@ description: Documentation for the retinify project.
 theme: just-the-docs
 
 url: https://retinify.github.io/retinify-documentation/
-
-aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
