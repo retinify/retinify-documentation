@@ -6,3 +6,19 @@ url: https://retinify.github.io/retinify-documentation/
 
 aux_links:
   retinify Repository: https://github.com/retinify/retinify
+
+callouts:
+  highlight:
+    color: yellow
+  important:
+    title: Important
+    color: blue
+  new:
+    title: New
+    color: green
+  note:
+    title: Note
+    color: purple
+  warning:
+    title: Warning
+    color: red  

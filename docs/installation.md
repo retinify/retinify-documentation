@@ -33,12 +33,12 @@ Select the hardware backend (e.g., NVIDIA GPU or CPU) you want to use for accele
 
 ---
 {: .highlight }
-If you do not add `--install`, a Debian package will just be created in the build directory.  
+>If you do not add `--install`, a Debian package will just be created in the build directory.  
   
 # 3. Uninstall retinify
 ```
 sudo apt remove libretinify-dev
 ```
 {: .note }
-Only available if you installed the Debian package via the build script.  
+>Only available if you installed the Debian package via the build script.  
   
