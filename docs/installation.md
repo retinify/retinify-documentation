@@ -22,11 +22,13 @@ Select the hardware backend (e.g., NVIDIA GPU or CPU) you want to use for accele
 |:-------------|:--------|:--------|:---------|  
 | Versions     | `12.x`  | `9.x`   | `10.x`   |  
   
+- `x64` + `NVIDIA GPU`
 ```
 ./build.sh --install --gpu
 ```
 
 ## 2.2 with CPU
+- `x64`
 ```
 ./build.sh --install --cpu
 ```
@@ -34,8 +36,13 @@ Select the hardware backend (e.g., NVIDIA GPU or CPU) you want to use for accele
 ---
 {: .highlight }
 >If you do not add `--install`, a Debian package will just be created in the build directory.  
+
+# 3. Check if Installed
+```
+dpkg -l libretinify-dev
+```
   
-# 3. Uninstall retinify
+# 4. Uninstall retinify
 ```
 sudo apt remove libretinify-dev
 ```

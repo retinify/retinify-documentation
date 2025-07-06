@@ -33,6 +33,8 @@ Hands-on examples to get you started with real-world use cases.
 ### 3. [API](https://retinify.github.io/retinify-documentation/docs/API/)
 Detailed class and function-level documentation for developers.
 
+---
+
 ## Contact
 For any inquiries, please feel free to contact us at **[contact@retinify.ai](mailto:contact@retinify.ai)**.  
 We would be pleased to assist you and look forward to hearing from you.
