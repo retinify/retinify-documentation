@@ -17,7 +17,11 @@ cd retinify
 # 2. Install retinify
 Select the hardware backend (e.g., NVIDIA GPU or CPU) you want to use for acceleration, then run the installation script with the appropriate options.
   
+{: .highlight }
+>If you do not add `--install`, a Debian package will just be created in the build directory.  
+
 ## 2.1 with TensorRT
+  
 | Libraries    | [CUDA](https://developer.nvidia.com/cuda-toolkit-archive) | [cuDNN](https://developer.nvidia.com/cudnn-archive) | [TensorRT](https://developer.nvidia.com/tensorrt) |  
 |:-------------|:--------|:--------|:---------|  
 | Versions     | `12.x`  | `9.x`   | `10.x`   |  
@@ -36,10 +40,6 @@ comming soon
 
 ## 2.4 with OpenVINO
 comming soon
-
----
-{: .highlight }
->If you do not add `--install`, a Debian package will just be created in the build directory.  
 
 # 3. Check if Installed
 ```
