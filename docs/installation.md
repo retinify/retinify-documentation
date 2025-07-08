@@ -5,8 +5,8 @@ nav_order: 2
 ---
 
 # Installation
-retinify supports Linux (Ubuntu) and can be installed easily via the provided `build.sh` script.  
-This script generates a Debian package, allowing for clean installation, easy updates, and simple uninstallation through standard package management tools.
+retinify supports Linux (Ubuntu) and can be easily installed using the provided `build.sh` script.  
+This script generates a Debian package, enabling clean installation, easy updating, and simple removal using standard package management tools.
 
 # 1. Clone the retinify repository.
 ```
@@ -15,7 +15,7 @@ cd retinify
 ```
 
 # 2. Install retinify
-Select the hardware backend (e.g., NVIDIA GPU or CPU) you want to use for acceleration, then run the installation script with the appropriate options.
+Select the hardware backend (e.g., NVIDIA GPU or CPU) to be used for acceleration, then run the installation script with the appropriate options.
   
 {: .highlight }
 >If you do not add `--install`, a Debian package will just be created in the build directory.  
@@ -36,12 +36,12 @@ Select the hardware backend (e.g., NVIDIA GPU or CPU) you want to use for accele
 ```
 
 ## 2.3 with HailoRT
-comming soon
+coming soon
 
 ## 2.4 with OpenVINO
-comming soon
+coming soon
 
-# 3. Check if Installed
+# 3. Verify Installation
 ```
 dpkg -l libretinify-dev
 ```
@@ -50,6 +50,7 @@ dpkg -l libretinify-dev
 ```
 sudo apt remove libretinify-dev
 ```
+  
 {: .note }
->Only available if you installed the Debian package via the build script.  
+>This option is only available if you installed retinify using the generated Debian package.
   
