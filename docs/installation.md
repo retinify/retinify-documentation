@@ -6,7 +6,8 @@ nav_order: 2
 
 # Installation
 retinify supports Linux (Ubuntu) and can be easily installed using the provided `build.sh` script.  
-This script generates a Debian package, enabling clean installation, easy updating, and simple removal using standard package management tools.
+This script generates a Debian package, enabling clean installation, easy updating, and simple removal using standard package management tools.  
+Retinify requires **CMake 3.14 or later** and **GCC 11 or later**.  
 
 # 1. Clone the retinify repository.
 ```

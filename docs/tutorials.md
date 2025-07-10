@@ -28,9 +28,9 @@ Stereo matching can be performed using the `retinify::Pipeline`.
 In this tutorial, we will use image data in the form of `cv::Mat`.  
   
 {: .note }
->The cv::Mat data used as input must satisfy the following conditions:
+>The `cv::Mat` data used as input must satisfy the following conditions:
 >- Grayscale
->- Floating-point type (`CV_32FC1`)
+>- Floating-point type (CV_32FC1)
 >- The left image, right image, and output disparity map must all have the same dimensions.
   
 ```c++
