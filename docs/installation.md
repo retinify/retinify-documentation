@@ -10,8 +10,8 @@ This script generates a Debian package, enabling clean installation, easy updati
 Retinify requires **CMake 3.14 or later** and **GCC 11 or later**.  
 
 # 1. Clone the retinify repository.
-```
-git clone --recursive https://github.com/retinify/retinify.git
+```bash
+git clone https://github.com/retinify/retinify.git
 cd retinify
 ```
 
@@ -27,12 +27,12 @@ Select the hardware backend (e.g., NVIDIA GPU or CPU) to be used for acceleratio
 |:-------------|:--------|:--------|:---------|  
 | Versions     | `12.x`  | `9.x`   | `10.x`   |  
   
-```
-./build.sh --install --gpu
+```bash
+./build.sh --install --tensorrt
 ```
 
 ## 2.2 with CPU
-```
+```bash
 ./build.sh --install --cpu
 ```
 
@@ -43,12 +43,12 @@ coming soon
 coming soon
 
 # 3. Verify Installation
-```
+```bash
 dpkg -l libretinify-dev
 ```
   
 # 4. Uninstall retinify
-```
+```bash
 sudo apt remove libretinify-dev
 ```
   
