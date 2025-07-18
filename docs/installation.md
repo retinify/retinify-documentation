@@ -7,8 +7,15 @@ nav_order: 2
 # Installation
 retinify supports Linux (Ubuntu) and can be easily installed using the provided `build.sh` script.  
 This script generates a Debian package, enabling clean installation, easy updating, and simple removal using standard package management tools.  
-Retinify requires **CMake 3.14 or later** and **GCC 11 or later**.  
 
+# 0. Dependencies
+- [**GCC 11 or later**](https://gcc.gnu.org/releases.html)
+- [**CMake 3.14 or later**](https://cmake.org/download/)
+- [**OpenCV 4.6 or later**](https://opencv.org/releases/)
+      
+    {: .note }
+    >If you do not use the `--tools` option, OpenCV is not required.
+    
 # 1. Clone the retinify repository.
 ```bash
 git clone https://github.com/retinify/retinify.git
@@ -28,12 +35,12 @@ Select the hardware backend (e.g., NVIDIA GPU or CPU) to be used for acceleratio
 | Versions     | `12.x`  | `9.x`   | `10.x`   |  
   
 ```bash
-./build.sh --install --tensorrt
+./build.sh --install --tensorrt --tools
 ```
 
 ## 2.2 with CPU
 ```bash
-./build.sh --install --cpu
+./build.sh --install --cpu --tools
 ```
 
 ## 2.3 with HailoRT
