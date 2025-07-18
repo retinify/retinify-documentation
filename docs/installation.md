@@ -11,7 +11,7 @@ This script generates a Debian package, enabling clean installation, easy updati
 # 0. Dependencies
 - [**GCC 11 or later**](https://gcc.gnu.org/releases.html)
 - [**CMake 3.14 or later**](https://cmake.org/download/)
-- [**OpenCV 4.6 or later**](https://opencv.org/releases/)
+- [**OpenCV 4.x**](https://opencv.org/releases/)
   
 {: .note }
 >If you do not use the `--tools` option, OpenCV is not required.

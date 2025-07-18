@@ -24,32 +24,29 @@ target_link_libraries(${PROJECT_NAME} retinify)
 ```
 
 ## 3. C++ Code
-Stereo matching can be performed using the `retinify::Pipeline`.  
 In this tutorial, we will use image data in the form of `cv::Mat`.  
+Stereo matching can be performed using the `retinify::tools::LRConsistencyPipeline`.  
   
-{: .note }
->The `cv::Mat` data used as input must satisfy the following conditions:
->- Grayscale
->- Floating-point type (CV_32FC1)
->- The left image, right image, and output disparity map must all have the same dimensions.
-  
-```c++
-#include <opencv2/opencv.hpp>
-
-// LOAD GRAYSCALE IMAGES
-cv::Mat leftImage = cv::imread(<left_image_path>, cv::IMREAD_GRAYSCALE);
-cv::Mat rightImage = cv::imread(<right_image_path>, cv::IMREAD_GRAYSCALE);
-
-// CONVERT TO FLOAT
-leftImage.convertTo(leftImage, CV_32FC1);
-rightImage.convertTo(rightImage, CV_32FC1);
-
-// PREPARE OUTPUT
-cv::Mat disparity = cv::Mat{leftImage.size(), CV_32FC1};
-```
 ```c++
 #include <retinify/retinify.hpp>
+#include <opencv2/opencv.hpp>
+
+// PREPARE OPENCV DATA
+cv::Mat leftImage = cv::imread(<left_image_path>);
+cv::Mat rightImage = cv::imread(<right_image_path>);
+cv::Mat disparity;
+
+// STEREO MATCHING PIPELINE
+retinify::tools::LRConsistencyPipeline pipeline;
+
+// INITIALIZE PIPELINE
+pipeline.Initialize();
 
 // RUN STEREO MATCHING
-pipeline.Run(leftImage.ptr(), leftImage.step[0], rightImage.ptr(), rightImage.step[0], disparity.ptr(), disparity.step[0]);
+pipeline.Run(leftImage, rightImage, disparity);
+
+// SHOW DISPARITY
+const int maxDisparity = 256;
+cv::imshow("disparity", retinify::tools::ColorizeDisparity(disparity, maxDisparity));
+cv::waitKey(0);
 ```
