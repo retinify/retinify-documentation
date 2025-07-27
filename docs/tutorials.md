@@ -31,18 +31,20 @@ Stereo matching can be performed using the `retinify::tools::LRConsistencyPipeli
 #include <retinify/retinify.hpp>
 #include <opencv2/opencv.hpp>
 
-// PREPARE OPENCV DATA
+// LOAD INPUT IMAGES
 cv::Mat leftImage = cv::imread(<left_image_path>);
 cv::Mat rightImage = cv::imread(<right_image_path>);
+
+// PREPARE OUTPUT CONTAINER
 cv::Mat disparity;
 
-// STEREO MATCHING PIPELINE
+// CREATE STEREO MATCHING PIPELINE
 retinify::tools::LRConsistencyPipeline pipeline;
 
-// INITIALIZE PIPELINE
+// INITIALIZE THE PIPELINE
 pipeline.Initialize();
 
-// RUN STEREO MATCHING
+// EXECUTE STEREO MATCHING
 pipeline.Run(leftImage, rightImage, disparity);
 
 // SHOW DISPARITY

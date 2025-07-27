@@ -1,5 +1,5 @@
 ---
-title: Path
+title: Tools
 parent: API
 layout: default
 nav_order: 5
