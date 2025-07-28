@@ -29,6 +29,7 @@ Select the hardware backend (e.g., NVIDIA GPU or CPU) to be used for acceleratio
 >If you do not add `--install`, a Debian package will just be created in the build directory.  
 
 ## 2.1 with TensorRT
+The following additional libraries are required.
   
 | Libraries    | [CUDA](https://developer.nvidia.com/cuda-toolkit-archive) | [cuDNN](https://developer.nvidia.com/cudnn-archive) | [TensorRT](https://developer.nvidia.com/tensorrt) |  
 |:-------------|:--------|:--------|:---------|  
@@ -50,11 +51,13 @@ coming soon
 coming soon
 
 # 3. Verify Installation
+You can check whether the Debian package is installed using the following script.
 ```bash
-dpkg -l libretinify-dev
+dpkg -s libretinify-dev
 ```
   
 # 4. Uninstall retinify
+To uninstall the Debian package, use the following script.
 ```bash
 sudo apt remove libretinify-dev
 ```
