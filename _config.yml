@@ -5,7 +5,7 @@ theme: just-the-docs
 url: https://retinify.github.io/retinify-documentation/
 
 aux_links:
-  retinify Repository: https://github.com/retinify/retinify
+  Retinify Repository: https://github.com/retinify/retinify
 
 callouts:
   highlight:
