@@ -25,7 +25,7 @@ target_link_libraries(${PROJECT_NAME} retinify)
 
 ## 3. C++ Code
 In this tutorial, we will use image data in the form of `cv::Mat`.  
-Stereo matching can be performed using the `retinify::tools::LRConsistencyPipeline`.  
+Stereo matching can be performed using the `retinify::tools::StereoMatchingPipeline`.  
   
 ```c++
 #include <retinify/retinify.hpp>
@@ -39,7 +39,7 @@ cv::Mat rightImage = cv::imread(<right_image_path>);
 cv::Mat disparity;
 
 // CREATE STEREO MATCHING PIPELINE
-retinify::tools::LRConsistencyPipeline pipeline;
+retinify::tools::StereoMatchingPipeline pipeline;
 
 // INITIALIZE THE PIPELINE
 pipeline.Initialize();
